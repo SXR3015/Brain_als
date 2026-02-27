@@ -15,7 +15,7 @@
 ## 🌟 Highlights
 
 - **Neuroanatomically Grounded Design**: Bridges macroscale connectomics (FC/SC) and microscale glymphatic dysfunction (PVS, ALPS, etc.) via a biologically plausible architecture.
-- **Prefrontal Anchor Attention (PAA)**: A novel attention mechanism that leverages frontal lobe vulnerability in ALS, using intra-prefrontal connectivity as queries to modulate whole-brain interactions.
+- **Frontal Anchor Attention (FAA)**: A novel attention mechanism that leverages frontal lobe vulnerability in ALS, using intra-prefrontal connectivity as queries to modulate whole-brain interactions.
 - **Superior Performance**: Achieves **77% Accuracy** and **0.80 AUC** on our multi-center ALS cohort (159 ALS, 107 HC), significantly outperforming standard fusion baselines (+6% Acc, +12% AUC).
 - **Interpretability**: Gradient-based attribution validates that the model focuses on clinically relevant regions (SFG, PCL, PrG) consistent with known ALS pathogenesis.
 
@@ -25,7 +25,7 @@
 
 BrainAnchorNet integrates multimodal biomarkers through three core stages:
 
-1.  **Frontal GCN Extractors**: Separately process internal (68×68) and external (68×178) prefrontal connections from FC/SC matrices (246-region atlas).
+1.  **Frontal Extractors**: Separately process internal (68×68) and external (68×178) prefrontal connections from FC/SC matrices (246-region atlas).
 2.  **AttentionFusion Module**: Uses intra-prefrontal features as *Queries* to attend to whole-brain contexts (*Keys/Values*).
 3.  **Multimodal Fusion**: Fuses attended connectomic features with linear-encoded glymphatic markers (ALPS, PVS, ChP, FWF, gBOLD-CSF) for final classification.
 
