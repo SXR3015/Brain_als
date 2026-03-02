@@ -30,7 +30,7 @@ BrainAnchorNet integrates multimodal biomarkers through three core stages:
 3.  **Multimodal Fusion**: Fuses attended connectomic features with linear-encoded glymphatic markers (ALPS, PVS, ChP, FWF, gBOLD-CSF) for final classification.
 
 <p align="center">
-  <img src="assets/architecture_diagram.png" alt="ALSAnchorNet Architecture" width="800"/>
+  <img src="final_Mainframe.png" alt="ALSAnchorNet Architecture" width="800"/>
   <br>
   <em>Figure 1: Overall framework of BrainAnchorNet. The frontal Anchor Attention (FAA) module explicitly models frontal vulnerability.</em>
 </p>
